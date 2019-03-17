@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/containerRL"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvCardholderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_label" />
+
+        <EditText
+            android:id="@+id/etCardholderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvCardholderName"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/tvCardholderName" />
+
+
+        <TextView
+            android:id="@+id/tvCardholderAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/etCardholderAge"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/etCardholderAge"
+            android:text="@string/age_label" />
+
+        <EditText
+            android:id="@+id/etCardholderAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etCardholderName"
+            android:layout_alignLeft="@+id/etCardholderName"
+            android:layout_alignParentRight="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/etCardholderGender"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/etCardholderGender"
+
+            android:text="@string/gender_label" />
+
+        <EditText
+            android:id="@+id/etCardholderGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etCardholderAge"
+            android:layout_alignLeft="@+id/etCardholderAge"
+            android:layout_alignParentRight="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/etCardholderContact"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/etCardholderContact"
+            android:text="@string/Contact_label" />
+
+        <EditText
+            android:id="@+id/etCardholderContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etCardholderGender"
+            android:layout_alignLeft="@+id/etCardholderName"
+            android:layout_alignParentRight="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/etCardholderEducation"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/etCardholderEducation"
+            android:text="@string/education_label" />
+
+        <EditText
+            android:id="@+id/etCardholderEducation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etCardholderContact"
+            android:layout_alignLeft="@+id/etCardholderName"
+            android:layout_alignParentRight="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/etCardholderCity"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/etCardholderCity"
+            android:text="@string/city_label" />
+
+        <EditText
+            android:id="@+id/etCardholderCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etCardholderEducation"
+            android:layout_alignLeft="@+id/etCardholderName"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <com.example.customviewassignment.CustomButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerRL"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/roundbutton"
+        android:padding="10dp"
+        android:text="Submit" />
+
+</RelativeLayout>

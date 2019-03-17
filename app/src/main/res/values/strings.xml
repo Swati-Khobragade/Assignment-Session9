@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Custom View Assignment</string>
+    <string name="name_label">Name</string>
+    <string name="age_label">Age</string>
+    <string name="gender_label">Gender</string>
+    <string name="Contact_label">Contact</string>
+    <string name="education_label">Qualification</string>
+    <string name="city_label">City</string>
+</resources>
